@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imgens com Tamanhos dinâmicos</title>
+</head>
+<body>
+    <h1>Testando imagens com tamanhos dinâmicos</h1>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/mgr-p.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/mgr-m.jpg" type="image/jpg">
+        <img src="imagens/mgr-g.jpg" alt="Raiden image">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="Raga Of Thousand Suns - Hanu Dixit.mp3"  controls loop></audio>
+    <!--MP3 WAV OGG-->
+    <h2>Outras maneiras de colocar áudio</h2>
+    <audio preload="metadata" controls> <!--Dentro de preload= você pode usar "auto" (que só vai carregar o site quando o audio tiver feito todo download. 
+        Você também pode usar metadata, que vai carregar algumas imagens, nomes, informações simples. 
+        e none que não vai carregar nada, só quando for usado mesmo)-->
+        <source src="Raga Of Thousand Suns - Hanu Dixit.mp3" type="mpeg">
+        <source src="Raga Of Thousand Suns - Hanu Dixit.ogg" type="ogg">
+        <source src="Raga Of Thousand Suns - Hanu Dixit.wav" type="image/wav">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="Raga Of Thousand Suns - Hanu Dixit.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+      <img src="imagens/mgr-g.jpg" alt="">
+</body>
+</html>

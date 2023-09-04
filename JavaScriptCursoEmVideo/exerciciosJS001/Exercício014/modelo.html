@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia </title> <!-- Aqui fica o nome da aba -->
+    <link rel="stylesheet" href="style.css">
+    <!-- esse link com rel serve para criar o href para buscar o css-->
+</head>
+<body onload="carregar()">
+       <!-- Repare que o onload que carrega a página ao inicia-la 
+      está dentro do < > do body e na frente está a função carregar do JS -->
+    <header>
+         <h1 id="boa">
+          <!--Dentro dessa h1 está a id = "boa" para ser buscada lá no js
+          mudar esse h1 -->
+
+         </h1>
+    </header>
+    <section>
+          <div id="msg">
+            <!-- Essa id foi criada para ser alterada lá no js-->
+           
+          </div>
+          <div>
+            <img id="imagem"src="dia_resized 650.png" alt="Foto do dia">
+            <!-- Foi criado dentro dessa div uma <img> para que ela possa
+            ser buscada e ter a imagem alterada no js, id, src, alt-->
+          </div>
+    </section>
+    <footer>
+        <p>&copy; OnoMichiProductions</p>
+        <!-- o &copy; é pra ficar aquele c de copyright, e OnoMichi é o melhor
+        REPARE que foi criado dentro de um <p>-->
+    </footer>
+    <script src= "script.js"></script>
+    <!-- Aqui é onde se criar a source dentro do script, escrevendo dessa maneira
+    e usando CTRL + click, já vai criar um arquivo js. Uma aba-->
+</body>
+</html>

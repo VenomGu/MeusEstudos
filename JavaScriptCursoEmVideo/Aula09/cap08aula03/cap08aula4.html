@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <p>Usando a tag code fica muito mais limpo a leitura, para escrever códigos dentro de um texto, fica muito melhor, como no exemplo assima.</p>
+    <code>
+        <p>Exemplo de linguagem em Python</p>
+        num = int(input('digite um número'))
+        if num % 2 == 0:
+             print(f'O número {num} é PAR')
+        else:
+             print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')     
+    </code>
+    <p>A tag code não mantem a intentação do código, mas se você usar a tag pre antes de code, ele irá manter a indentação como na cópia abaixo</p>
+    <pre>
+        <code>
+    num = int(input('digite um número'))
+    if num % 2 == 0:
+            print(f'O número {num} é PAR')
+    else:
+            print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')     
+        </code>
+    </pre>
+    <p>Para iminuir esses expaços, caso você queira, selecione a área que você quer e segure shift + tab e se quiser jogar para frente da área selecionada, use apenas tab.</p>
+    <h2>citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q> sendo uma quotation, você usa a tag q para já deixar em áspas</p>
+    <h2>Usando uma citação maior usando blockquote</h2>
+    <p>Exemplo: Segundao Jeff Noble, no seu livro HTLML para Leigos:</p>
+    <p>Repare que dentro de blockquote foi usado a tag cite= link para a citação, mas só colocar essa citação não levará para o link quando for clickado pelo usuário, mas serve para o sistema de buscas do google. </p>
+    <blockquote cite="https://books.google.com.br/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
+    <p>Dessa maneira acima, o texto em blockquote fica em destaque</p>
+    <h2> Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr"> Estou escrevendo usando a tag bdo left to right</bdo></p>
+    <p><bdo dir="rtl"> e aqui estou escrevendo usando a tag bdo right to left</bdo></p>
+</body>
+</html>

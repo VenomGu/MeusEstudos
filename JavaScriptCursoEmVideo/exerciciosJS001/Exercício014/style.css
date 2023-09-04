@@ -1,0 +1,37 @@
+body{
+    background: rgb(25, 25, 175);
+    font: normal 15pt Comic;
+
+}
+header {
+    color: white;
+    text-align: center;
+    font: normal 15pt Arial;
+}
+section {
+      font: normal 40pt Arial;
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+      /*o border-radius: serve para mudar as bordas, deixa-las mais arredonadas
+      dando um aspecto maus bonito.*/ 
+      padding: 15px;
+      width: 700px; 
+      margin: auto;
+      box-shadow: 5px 5px 10px rgb(39, 35, 35);
+      /*box-shadow serve para colocar sombra na section nesse caso */
+}
+
+div { 
+    text-align: center;
+    padding: 5px;
+    /*text-align: serve para organizar 
+    o texto da div padding é a altura que vai ficar a imagem  */
+
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    /* font-style: serve para deixar em italico */
+
+}

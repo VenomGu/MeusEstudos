@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesnete aumente e diminua o tamanho do seu navegador.</p>
+    <h2>ISSO É SUPER IMPORTANTE!</h2>
+    <p>Fique de olho, pois a ordem do source media dentro do picture faz diferença para o uso, lembre-se de mudar o width para max-width:750px para imagem pequena e 1050px para imagem de tamanho médio, não esqueça de colocar no type o image/png ou o tipo da imagem, e também use o srcset colocando as imagens em seus tamanhos adequados.</p>
+
+    <picture> 
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-flexível">
+    </picture>
+
+</body>
+</html>

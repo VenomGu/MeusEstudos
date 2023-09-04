@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de semântica</title>
+
+    <style> 
+        body{
+            background-color: blueviolet;
+            /*Repare que aqui, foi criado um style para css e então acessou o background corlor e selecionou a cor. */
+        } 
+        mark{
+            /*Já aqui, a seleção foi para mark, então tudo que estiver com mark será afetado. */
+            background-color: rgb(50, 200, 205);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Usando o CSS dentro do HTML5
+        <p>
+            Para usar o CSS dentro de HTML5 você deve colocar dentro de head o style e dentro dele usar o body e colchetes. Se você usar o <address>ela ficará assim e isso serve para um link, é o significado dentro do html5</address>  
+        </p>
+    </h1>
+    <h1> Principais formatações
+          <h2>
+            Negrito / Destaque
+          </h2>
+          <p>
+            Nesta frase temos um <b> termo em negrito</b> usando a tag B minusculo (não semântica) aqui é só forma. 
+          </p>
+          <p>
+            Nesta frase, tenho um <strong> termo em destaque</strong> usando a tag STRONG em minusculo (semântica) ou seja aqui tem sentido
+          </p>
+    </h1>
+    <h2> Itálico / Ênfase
+        <p>
+            Nesta frase, temos um <i>termo em itálico</i> usando a tag I minusculo (não semântica)
+        </p>
+        
+            <p>Nesta frase, temos um termo em ênfase usando a tag EM (Semântica)</p>
+            <p>Pra agilizar alguns processos escrevendo o código no Visual Studio Code, você pode selecionar a área que você deseja usar uma tag, apertar ctrl + shift + p e então usar o Emmet: wrap with abrevvitation ou então envelopar com abreviação, e a ultima ação ficará salva, então na próxima vez, se for usar a mesma tag, como nesse caso aqui, é só selecionar, apertar o comando ctrl  shift + p e apertar enter duas vezes para aplicar a tag na área selecionada.</p> 
+            <p>Podemos usar o <mark> para marcar um texto</mark> e para alterar as cores do mark, eu escrevo o comando dentro de mark, escrevendo style: "background-color: color; "  <mark style="background-color: green;">, foi escolhido verde aqui dessa maneira</mark> </p>
+         <p>É possível usar a tag big para aumentar o tamanho do texto, mas hoje em dia é bem menos comum, e ficaria assim <big> mas se você reparar, o big está em vermelho, pois não é mais recomendado o seu uso</big> e para textos pequenos era usado a tag small, e ficava assim, <small>desse jeito</small>, mas repare que não ficou tão pequeno e não está obsoleto, o small tem a semântica de letras pequenas de um arquivo, como em um contrato. 
+         </p>
+    </h2>
+    <h2>Texto deletado</h2>
+    <p> Podermos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado. <del>E ficaria assim</del></p>
+    <h2> 
+        Texto inserido
+    </h2>
+    <p> Podemos marcar um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois. <ins>e ficaria assim</ins></p>
+    <p> Existe também o sublinhado com a tag U (Não semântica)<u>e fica assim</u></p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 </p>
+    <h2> Texto subscrito</h2>
+    <p>Para inserir coisas do tipo <sub>H20</sub></p>
+</body>
+</html>
