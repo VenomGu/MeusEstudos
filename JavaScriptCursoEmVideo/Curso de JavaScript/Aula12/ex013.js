@@ -1,6 +1,5 @@
 var agora = new Date()
 var diaSem = agora.getDay()
-diaSem = 8
 console.log(`o dia da semana é ${diaSem} `)
 /*
 0 = Domingo  
