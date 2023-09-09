@@ -1,7 +1,6 @@
 body{
     background: rgb(25, 25, 175);
     font: normal 15pt Arial;
-
 }
 header {
     color: white;
@@ -15,11 +14,14 @@ section {
       width: 500px;
       margin: auto;
       box-shadow: 5px 5px 10px rgb(36, 35, 35)
-      
 }
 footer {
     color: white;
     text-align: center;
     font-style: italic;
 
+}
+div{
+    text-align:justify;
+    font: normal 5pt;
 }
