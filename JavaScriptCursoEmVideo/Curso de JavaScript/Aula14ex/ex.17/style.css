@@ -1,6 +1,5 @@
 body{
     background: rgb(25, 25, 175);
-    font: normal 15pt Arial;
 }
 header {
     color: white;
@@ -23,5 +22,6 @@ footer {
 }
 div{
     text-align:justify;
-    font: normal 5pt;
+    font: normal 15pt Arial;
 }
+
