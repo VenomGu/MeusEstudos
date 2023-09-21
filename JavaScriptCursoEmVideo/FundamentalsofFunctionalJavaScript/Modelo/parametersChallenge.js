@@ -9,3 +9,5 @@ function askRide(pickup=" Current Location", ...stops){
 askRide("Avenue Z", "Street A")
 askRide(undefined, "Street A", "Street C", "Streedt B")
 askRide(`Av. Suassuna`, 'Av. Amoreiras', 'Rua Doutor Wilson Simas', 'Ribeirão bonito')
+
+
