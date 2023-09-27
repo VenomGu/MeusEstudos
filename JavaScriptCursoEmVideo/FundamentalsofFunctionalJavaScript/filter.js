@@ -1,11 +1,14 @@
 const studentsAndGrades = [
-    {name: "Sofia", grades: [56,95]},
-    {name: "Don", grades: [35,77]},
-    {name: "Joseph", grades: [100,87]},
-    {name: "Sara", grades: [67,88]}
+    { name: 'Sofia', approved: true, firstPeriodsGrades: [ 56, 95 ] },
+    { name: 'Don', approved: false, firstPeriodsGrades: [ 35, 77 ] },
+    { name: 'Joseph', approved: true, firstPeriodsGrades: [ 100, 87 ] },
+    { name: 'Sara', approved: true, firstPeriodsGrades: [ 67, 88 ] }
 ]
+const approvedStudentsOnly = (student)=>student.approved==true
+const starWithSOnly = (student)=>student.name[0] =="S"
 
-const studentsWithSofiaName = studentsAndGrades.filter(student=> student.name === "Sofia");
-//Usando filter() para encontrar todos os objetos com o nome "Sofia" (caso haja vários):
+const approvedStudents = studentsAndGrades.filter(approvedStudentsOnly)
+const starWithS =  studentsAndGrades.filter(starWithSOnly) /*Usando o filter */ 
 
-console.log(studentsWithSofiaName)
+console.log(approvedStudents)
+console.log(starWithS)

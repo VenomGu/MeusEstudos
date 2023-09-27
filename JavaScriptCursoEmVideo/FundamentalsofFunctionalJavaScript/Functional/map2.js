@@ -5,6 +5,7 @@ const studentsAndGrades = [
     {name: "Sara", grades: [67,88]}
 ]
 
+//console.log(studentsAndGrades)
 const getNamesOnly = (student) => {
     return student.name
 }
@@ -14,10 +15,6 @@ const getGradesOnly = student =>{
 
 const names = studentsAndGrades.map(getNamesOnly)
 const grades = studentsAndGrades.map(getGradesOnly)
-
-console.log(names)
-console.log(grades)
-
 const studentsStatus = studentsAndGrades.map((student) =>{
     return {
         ...student,
@@ -30,9 +27,6 @@ const studentsStatus = studentsAndGrades.map((student) =>{
        firstPeriodsGrades: student.grades
     }
 })
-
 console.log(studentsStatus)
-
-num = 1543.5
-num.toFixed('pt-BR',{style:'currencey', currency:'BRL'})
-console.log(num)
+console.log(names) 
+console.log(grades)
