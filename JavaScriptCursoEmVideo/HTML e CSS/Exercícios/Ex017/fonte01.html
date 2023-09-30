@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        
+        body{ 
+            font-family:'Times New Roman', Times, serif;
+            /*
+            para font-size é recomendado em e px.
+
+            Medidas absolutas 
+            cm(centimetro), 
+            mm(milimetro), 
+            in(polegada), 
+            px(pixels RECOMENDADO)
+            pt(ponto), 
+            pc(paica)
+
+            Medidas Relativas
+            em(relativo a altura M, RECOMENDADO),
+            ex(relativo a altura x), 
+            rem (relativo a root),
+            vw(relativo ao viewport), 
+            vh
+            % 
+
+            16px geralmente é = 1em
+            */
+            }
+            h1{
+                /*
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */  
+
+            /*shorthand*/
+
+            /*font-style -> font-weight -> font-size -> font-family É OBRIGATÓRIO ESTAR NESSA ORDEM!!!! */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+            /*Do jeto que está acima, é possível fazer de um jeito bem mais rápido e fácil.*/
+            }
+            h2{
+                font: bold 2em 'Times new Roman';
+            }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quibusdam numquam quasi consequuntur nostrum dicta soluta cupiditate, tempora repellat sint blanditiis odit qui ut unde harum. Accusantium esse necessitatibus vitae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem deleniti culpa dignissimos, eligendi ea aut, maxime earum ducimus sint assumenda enim quis praesentium. Esse voluptates sint provident fugit odio?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere repudiandae, maxime minus tempore fugit officia non neque fugiat sequi dignissimos quis sed fuga debitis veniam explicabo quod laboriosam necessitatibus! Hic.</p>
+</body>
+</html>

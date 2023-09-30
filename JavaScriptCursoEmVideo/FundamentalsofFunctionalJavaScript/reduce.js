@@ -1,12 +1,17 @@
-const numbers = [1,2,3,4,5,6,7] //28
+const numbers = [1,2,3,4,5,6,7] 
 
-const sum = ()=>{
-let total = 0
-c=0
-for (const c in numbers) {
-     total += numbers[c]
-     }
-     return total
+//Separando valores entre par e impar dentro de uma const que contém dois objetos com arrays, par e impar, even and odds.
+const inicialValue = { 
+    even: [],
+    odds: []
+   }
+const reduceResult = numbers.reduce((accumulator,currentValue)=>{  
+    if(currentValue % 2 == 0){
+    accumulator.even.push(currentValue)
+}else{
+    accumulator.odds.push(currentValue)
 }
-var soma = sum()
-console.log(soma)
+return accumulator
+},inicialValue)
+
+console.log(reduceResult)
