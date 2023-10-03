@@ -7,9 +7,9 @@ let studentsAndGrades=[
 
 /*1. Add a boolean property called approved to each object. map()*/
 let approved = true;
-let addProperty= studentsAndGrades.map((studentsAndGrades)=>{
+let addProperty= studentsAndGrades.map((student)=>{
     return {
-        ...studentsAndGrades, 
+        ...student, 
         approved: approved //Method to make the approved an property, the map() will do the rest adding in each iteration. 
     };
 });
@@ -33,7 +33,7 @@ studentsAndGrades=replaceGrades; // Grades trocado por gpa ()
 
 let approvedOrnot = studentsAndGrades.map((notaAtual)=>{
     media = []
-    media = (notaAtual.gpa[0]+notaAtual.gpa[1])/2
+    media = (notaAtual.gpa[0]+notaAtual.gpa[1])/notaAtual.gpa.length
     if(media>=70){
         return {
             names:notaAtual.names,
