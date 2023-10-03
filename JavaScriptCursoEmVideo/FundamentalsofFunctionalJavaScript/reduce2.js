@@ -19,12 +19,6 @@ const names = [
     {name: "Grapes", price:8},
     {name: "Oranges", price:9}
  ];
- console.log(names.name)
- const novoValor = {name: "Avocado", price:8}
-if(!names.includes(novoValor.name)===true){//Jeito simples
-    names.push(novoValor);
-};
-console.log(names)
 
  const totalPrice = names.reduce((accumulator,currentPrice)=>{
     accumulator+=currentPrice.price;
@@ -33,7 +27,9 @@ console.log(names)
  console.log(`O preço total é ${totalPrice}`);
 
  const list = names.reduce((accumulator,currentPrice)=>{
-    accumulator+=`- ${currentPrice.name}\n`;
-    return accumulator;
- },'');
-console.log('Lista de produtos:\n'+list);
+    accumulator+=`- ${currentPrice.name}\n`
+    //console.log(accumulator.name)
+    //console.log(currentPrice.name)
+    return accumulator
+ },'')
+ console.log(list)

@@ -5,10 +5,10 @@ const studentsAndGrades = [
     { name: 'Sara', approved: true, firstPeriodsGrades: [ 67, 88 ] }
 ]
 const approvedStudentsOnly = (student)=>student.approved==true
-const starWithSOnly = (student)=>student.name[0] =="S"
+const starWithSOnly = (student)=>student.name[0] =="S"  
 
 const approvedStudents = studentsAndGrades.filter(approvedStudentsOnly)
-const starWithS =  studentsAndGrades.filter(starWithSOnly) /*Usando o filter */ 
+const starWithS = studentsAndGrades.filter(starWithSOnly) /*Usando o filter */ 
 
 console.log(approvedStudents)
 console.log(starWithS)
