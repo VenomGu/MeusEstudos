@@ -53,3 +53,4 @@ console.log(studentsAndGrades)
 //5. Print only the approved students.
 let approvedStudentsOnly = approvedOrnot.filter((students=> students.approved=="Approved")) //Filtrei os alunos aprovados
 console.log(approvedStudentsOnly) 
+
